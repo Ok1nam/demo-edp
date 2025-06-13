@@ -6,7 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import FloatingSave from "./components/FloatingSave";
 import LoginForm from "./components/LoginForm";
 import Home from "./pages/Home";
 import Tools from "./pages/Tools";
@@ -86,13 +85,12 @@ function Router() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      <Header navigate={navigate} />
       <Navigation navigate={navigate} />
       <main className="flex-1 px-8 py-8 max-w-6xl mx-auto w-full">
         {renderCurrentPage()}
       </main>
       <Footer navigate={navigate} />
-      <FloatingSave />
     </div>
   );
 }

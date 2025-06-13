@@ -11,7 +11,7 @@ export default function Annexes() {
       description: `Téléchargement du document : ${docType}`,
     });
   };
-
+//lalala
   return (
     <section id="annexes">
       <h1 className="flex items-center gap-2 mb-6 text-2xl font-bold text-gray-800">
