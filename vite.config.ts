@@ -8,13 +8,14 @@ export default defineConfig({
   base: "/demo-edp/",
 
   root: "client", // <- pour Vite, ça garde ton src propre
-  build: {
-    outDir: path.resolve(__dirname, "dist"),
-    emptyOutDir: true,
-    rollupOptions: {
-      input: path.resolve(__dirname, "client/index.html"),
-    },
+build: {
+  outDir: path.resolve(__dirname, "dist"),
+  emptyOutDir: true,
+  rollupOptions: {
+    input: path.resolve(__dirname, "client/index.html"),
   },
+},
+
 
   resolve: {
     alias: {
